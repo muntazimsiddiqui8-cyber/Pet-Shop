@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws & Hearts - Pet Adoption</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">🐾 Paws & Hearts</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#pets" class="nav-link">Find Pets</a></li>
+                <li><a href="#process" class="nav-link">Adoption Process</a></li>
+                <li><a href="#volunteer" class="nav-link">Volunteer</a></li>
+                <li><a href="#donate" class="nav-link">Donate</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Find Your Perfect Companion</h1>
+                    <p>Every pet deserves a loving home. Browse our adorable animals waiting for their forever families and make a difference today.</p>
+                    <div class="hero-buttons">
+                        <a href="#pets" class="btn btn-primary">Browse Pets</a>
+                        <a href="#process" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-images">
+                    <div class="col-1">
+                        <img src="./images/cat4.png" alt="Cute dog">
+                        <img src="./images/bird1.png" alt="Playful cat">
+                    </div>
+                    <div class="col-2">
+                        <img src="./images/bird2.png" alt="Happy puppy">
+                        <img src="./images/dog3.png" alt="Adorable kitten">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search & Filter Section -->
+    <section id="pets" class="section search-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Find Your New Best Friend</h2>
+                <p>Use our search filters to find the perfect pet that matches your lifestyle and preferences.</p>
+            </div>
+            
+            <!-- Search Filters -->
+            <div class="search-filters">
+                <div class="filter-grid">
+                    <div class="filter-group">
+                        <label>Pet Type</label>
+                        <select>
+                            <option>All Pets</option>
+                            <option>Dogs</option>
+                            <option>Cats</option>
+                            <option>Rabbits</option>
+                            <option>Birds</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Age</label>
+                        <select>
+                            <option>Any Age</option>
+                            <option>Puppy/Kitten</option>
+                            <option>Young</option>
+                            <option>Adult</option>
+                            <option>Senior</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Size</label>
+                        <select>
+                            <option>Any Size</option>
+                            <option>Small</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <button class="btn btn-orange">Search Pets</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pet Profiles Grid -->
+            <div class="pets-grid">
+                <!-- Pet Card 1 -->
+                <div class="pet-card">
+                    <img src="./images/bird1.png" alt="Golden Retriever">
+                    <div class="pet-card-content">
+                        <div class="pet-header">
+                            <h3 class="pet-name">Buddy</h3>
+                            <span class="status-badge status-available">Available</span>
+                        </div>
+                        <div class="pet-details">
+                            <p><strong>Breed:</strong> Golden Retriever</p>
+                            <p><strong>Age:</strong> 3 years</p>
+                            <p><strong>Size:</strong> Large</p>
+                        </div>
+                        <p class="pet-description">Buddy is a friendly and energetic dog who loves playing fetch and going on long walks. Great with kids!</p>
+                        <button class="btn btn-orange">Meet Buddy</button>
+                    </div>
+                </div>
+
+                <!-- Pet Card 2 -->
+                <div class="pet-card">
+                    <img src="./images/cat1.png" alt="Tabby Cat">
+                    <div class="pet-card-content">
+                        <div class="pet-header">
+                            <h3 class="pet-name">Luna</h3>
+                            <span class="status-badge status-available">Available</span>
+                        </div>
+                        <div class="pet-details">
+                            <p><strong>Breed:</strong> Tabby Mix</p>
+                            <p><strong>Age:</strong> 2 years</p>
+                            <p><strong>Size:</strong> Medium</p>
+                        </div>
+                        <p class="pet-description">Luna is a gentle and affectionate cat who loves cuddles and sunny windowsills. Perfect lap companion!</p>
+                        <button class="btn btn-orange">Meet Luna</button>
+                    </div>
+                </div>
+
+                <!-- Pet Card 3 -->
+                <div class="pet-card">
+                    <img src="./images/dog1.png" alt="Beagle">
+                    <div class="pet-card-content">
+                        <div class="pet-header">
+                            <h3 class="pet-name">Max</h3>
+                            <span class="status-badge status-pending">Available Soon</span>
+                        </div>
+                        <div class="pet-details">
+                            <p><strong>Breed:</strong> Beagle</p>
+                            <p><strong>Age:</strong> 5 years</p>
+                            <p><strong>Size:</strong> Medium</p>
+                        </div>
+                        <p class="pet-description">Max is a calm and loyal companion who enjoys leisurely walks and belly rubs. Great with other pets!</p>
+                        <button class="btn btn-disabled" disabled>Meet Tiger</button>
+                    </div>
+                </div>
+
+                <!-- Pet Card 4 -->
+                <div class="pet-card">
+                    <img src="./images/cat2.png" alt="Persian Cat">
+                    <div class="pet-card-content">
+                        <div class="pet-header">
+                            <h3 class="pet-name">Whiskers</h3>
+                            <span class="status-badge status-available">Available</span>
+                        </div>
+                        <div class="pet-details">
+                            <p><strong>Breed:</strong> Persian Mix</p>
+                            <p><strong>Age:</strong> 4 years</p>
+                            <p><strong>Size:</strong> Medium</p>
+                        </div>
+                        <p class="pet-description">Whiskers is an elegant and quiet cat who loves peaceful environments and gentle pets. Indoor cat preferred.</p>
+                        <button class="btn btn-orange">Meet Whisker</button>
+                    </div>
+                </div>
+
+                <!-- Pet Card 5 -->
+                <div class="pet-card">
+                    <img src="./images/dog4.png" alt="Labrador Puppy">
+                    <div class="pet-card-content">
+                        <div class="pet-header">
+                            <h3 class="pet-name">Bella</h3>
+                            <span class="status-badge status-available">Available</span>
+                        </div>
+                        <div class="pet-details">
+                            <p><strong>Breed:</strong> Labrador Mix</p>
+                            <p><strong>Age:</strong> 8 months</p>
+                            <p><strong>Size:</strong> Large (growing)</p>
+                        </div>
+                        <p class="pet-description">Bella is a playful puppy full of energy and love. She's learning basic commands and loves treats!</p>
+                        <button class="btn btn-orange">Meet Bella</button>
+                    </div>
+                </div>
+
+                <!-- Pet Card 6 -->
+                <div class="pet-card">
+                    <img src="./images/dog5.png" alt="Orange Cat">
+                    <div class="pet-card-content">
+                        <div class="pet-header">
+                            <h3 class="pet-name">Ginger</h3>
+                            <span class="status-badge status-available">Available</span>
+                        </div>
+                        <div class="pet-details">
+                            <p><strong>Breed:</strong> Orange Tabby</p>
+                            <p><strong>Age:</strong> 1 year</p>
+                            <p><strong>Size:</strong> Medium</p>
+                        </div>
+                        <p class="pet-description">Ginger is a curious and playful young cat who loves exploring and interactive toys. Very social!</p>
+                        <button class="btn btn-orange">Meet Ginger</button>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <button class="btn btn-blue">View All Pets</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adoption Process -->
+    <section id="process" class="section process-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Adoption Process</h2>
+                <p>Our simple 4-step process ensures the perfect match between pets and families.</p>
+            </div>
+            
+            <div class="process-grid">
+                <!-- Step 1 -->
+                <div class="process-step">
+                    <div class="step-number step-1">1</div>
+                    <h3>Browse & Choose</h3>
+                    <p>Browse our available pets and find one that matches your lifestyle and preferences.</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="process-step">
+                    <div class="step-number step-2">2</div>
+                    <h3>Meet & Greet</h3>
+                    <p>Schedule a visit to meet your potential new family member and see if it's a good fit.</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="process-step">
+                    <div class="step-number step-3">3</div>
+                    <h3>Application</h3>
+                    <p>Complete our adoption application and provide references for a quick approval process.</p>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="process-step">
+                    <div class="step-number step-4">4</div>
+                    <h3>Take Home</h3>
+                    <p>Once approved, complete the adoption paperwork and take your new companion home!</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="#contact" class="btn btn-orange">Start Adoption Process</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Opportunities -->
+    <section id="volunteer" class="section volunteer-section">
+        <div class="container">
+            <div class="volunteer-content">
+                <div class="volunteer-text">
+                    <h2>Volunteer With Us</h2>
+                    <p>Make a difference in the lives of animals by volunteering your time and skills. We have opportunities for everyone!</p>
+                    
+                    <div class="volunteer-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Animal Care</h3>
+                                <p>Help with feeding, grooming, and socializing our animals to prepare them for adoption.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon blue">
+                                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Event Support</h3>
+                                <p>Assist with adoption events, fundraisers, and community outreach programs.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon green">
+                                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Administrative</h3>
+                                <p>Help with paperwork, data entry, and other office tasks that keep our shelter running.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-blue">Become a Volunteer</button>
+                </div>
+                
+                <div class="volunteer-images">
+                    <img src="./images/cat3.png" alt="Volunteer with dog" class="main-image">
+                    <img src="./images/cat4.png" alt="Volunteer feeding cats" class="small-image">
+                    <img src="./images/bird2.png" alt="Volunteer at event" class="small-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donate" class="section donation-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Support Our Mission</h2>
+                <p>Your donations help us provide food, medical care, and shelter for animals in need. Every contribution makes a difference!</p>
+            </div>
+            
+            <div class="donation-grid">
+                <!-- Donation Option 1 -->
+                <div class="donation-card">
+                    <div class="donation-icon">🍽️</div>
+                    <h3>Feed a Pet</h3>
+                    <div class="donation-amount">$25</div>
+                    <p>Provides nutritious meals for a pet for one week</p>
+                    <button class="btn btn-white">Donate $25</button>
+                </div>
+                
+                <!-- Donation Option 2 -->
+                <div class="donation-card">
+                    <div class="donation-icon">🏥</div>
+                    <h3>Medical Care</h3>
+                    <div class="donation-amount">$75</div>
+                    <p>Covers basic veterinary checkup and vaccinations</p>
+                    <button class="btn btn-white">Donate $75</button>
+                </div>
+                
+                <!-- Donation Option 3 -->
+                <div class="donation-card">
+                    <div class="donation-icon">🏠</div>
+                    <h3>Shelter Support</h3>
+                    <div class="donation-amount">$150</div>
+                    <p>Helps maintain clean, safe shelter facilities</p>
+                    <button class="btn btn-white">Donate $150</button>
+                </div>
+            </div>
+            
+            <div class="custom-donation">
+                <p>Want to make a custom donation?</p>
+                <div class="donation-form">
+                    <input type="number" placeholder="Enter amount">
+                    <button class="btn btn-orange">Donate Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="section stories-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Success Stories</h2>
+                <p>Read heartwarming stories from families who found their perfect companions through our adoption program.</p>
+            </div>
+            
+            <div class="stories-grid">
+                <!-- Success Story 1 -->
+                <div class="story-card">
+                    <img src="./images/dog2.png" alt="Happy family with dog">
+                    <div class="story-content">
+                        <h3>Charlie Found His Forever Home</h3>
+                        <p>"Charlie has brought so much joy to our family. He's the perfect addition and we can't imagine life without him!"</p>
+                        <div class="story-author">- The Johnson Family</div>
+                    </div>
+                </div>
+                
+                <!-- Success Story 2 -->
+                <div class="story-card">
+                    <img src="./images/cat2.png" alt="Woman with cat">
+                    <div class="story-content">
+                        <h3>Mittens' New Beginning</h3>
+                        <p>"Mittens was shy at first, but now she's the most loving and playful cat. The adoption process was so smooth!"</p>
+                        <div class="story-author">- Sarah M.</div>
+                    </div>
+                </div>
+                
+                <!-- Success Story 3 -->
+                <div class="story-card">
+                    <img src="./images/bird2.png" alt="Senior couple with dog">
+                    <div class="story-content">
+                        <h3>Rocky's Second Chance</h3>
+                        <p>"Rocky is a senior dog who needed a quiet home. He's brought us so much companionship and love in our retirement."</p>
+                        <div class="story-author">- Robert & Mary K.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <button class="btn btn-green">Read More Stories</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>Have questions about adoption, volunteering, or donations? We'd love to hear from you!</p>
+            </div>
+            
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input type="text">
+                            </div>
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="tel">
+                        </div>
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <select>
+                                <option>General Inquiry</option>
+                                <option>Adoption Question</option>
+                                <option>Volunteer Interest</option>
+                                <option>Donation Information</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-orange">Send Message</button>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h3>Visit Our Shelter</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon orange">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Address</h4>
+                            <p>123 Pet Adoption Lane<br>Compassion City, CC 12345</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon blue">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>(555) 123-PETS<br>(555) 123-7387</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon green">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>info@pawsandhearts.org<br>adopt@pawsandhearts.org</p>
+                        </div>
+                    </div>
+                    
+                    <div class="hours-section">
+                        <h4>Shelter Hours</h4>
+                        <div class="hours-list">
+                            <div class="hours-item">
+                                <span>Monday - Friday:</span>
+                                <span>10:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Saturday:</span>
+                                <span>9:00 AM - 5:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Sunday:</span>
+                                <span>12:00 PM - 4:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-section">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link orange">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link blue">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link green">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.097.118.112.222.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24c6.624 0 11.99-5.367 11.99-12.013C24.007 5.367 18.641.001.017.001z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🐾 Paws & Hearts</h3>
+                    <p>Connecting loving families with pets in need since 2010. Every animal deserves a second chance at happiness.</p>
+                    <div class="footer-social">
+                        <a href="#">📘</a>
+                        <a href="#">🐦</a>
+                        <a href="#">📷</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#pets">Available Pets</a></li>
+                        <li><a href="#process">Adoption Process</a></li>
+                        <li><a href="#volunteer">Volunteer</a></li>
+                        <li><a href="#donate">Donate</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Pet Care Tips</a></li>
+                        <li><a href="#">Training Resources</a></li>
+                        <li><a href="#">Health Information</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>123 Pet Adoption Lane<br>Compassion City, CC 12345<br>(555) 123-PETS<br>info@pawsandhearts.org</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Paws & Hearts Pet Adoption. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
